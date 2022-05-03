@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
     s.module_name           = 'MobileWorkflowCore'
 
     s.subspec 'Core' do |cs|
-        cs.vendored_frameworks   = ''
-        cs.preserve_paths        = ['']
+        cs.vendored_frameworks   = 'MobileWorkflowCore.xcframework'
+        cs.preserve_paths        = ['MobileWorkflowCore.xcframework']
 
     end
 end
