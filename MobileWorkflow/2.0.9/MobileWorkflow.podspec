@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.homepage              = 'https://www.mobileworkflow.io'
     s.license               = { :type => 'Copyright', :file => 'LICENSE' }
     s.author                = { 'Future Workshops' => 'info@futureworkshops.com' }
-    s.source                = { :http => 'https://raw.github.com/FutureWorkshops/AppRailPreviewRepository-iOS/2.0.9/MobileWorkflowCore.zip' }
+    s.source                = { :http => 'https://raw.githubusercontent.com/FutureWorkshops/AppRailPreviewRepository-iOS/main/MobileWorkflow/2.0.9/MobileWorkflow.zip' }
     s.platform              = :ios
     s.swift_version         = '5'
     s.ios.deployment_target = '13.0'
@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
     s.subspec 'Core' do |cs|
         cs.vendored_frameworks   = 'MobileWorkflowCore.xcframework'
         cs.preserve_paths        = ['MobileWorkflowCore.xcframework']
-        cs.resources             = ['MobileWorkflowCore/**/*.{xib,xcassets,strings,stringsdict,m4v,fsh,vsh}']
+
     end
 end
