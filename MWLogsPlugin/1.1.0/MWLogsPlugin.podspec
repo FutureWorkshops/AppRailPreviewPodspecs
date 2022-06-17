@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |cs|
     cs.dependency           'MobileWorkflow', '~> 2.0.12'
-        cs.vendored_frameworks   = 'MWLogsPlugin.xcframework'
-        cs.preserve_paths        = ['MWLogsPlugin.xcframework']
+        cs.vendored_frameworks   = ['MWLogsPlugin.xcframework', 'CrashReporter.xcframework']
+        cs.preserve_paths        = ['MWLogsPlugin.xcframework', 'CrashReporter.xcframework']
 
-    cs.vendored_frameworks   = ['CrashReporter.xcframework']
-    cs.preserve_paths        = ['CrashReporter.xcframework']
+
+
   end
 end
