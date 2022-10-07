@@ -10,9 +10,11 @@ Pod::Spec.new do |s|
   s.swift_version         = '5'
   s.ios.deployment_target = '15.0'
   s.default_subspecs      = 'Core'
+  s.static_framework = true
 
   s.subspec 'Core' do |cs|
     cs.dependency           'MobileWorkflow', '~> 2.1.3'
+    cs.dependency           'GoogleMaps', '~> 7.1.0'
         cs.vendored_frameworks   = 'GoogleMapsPlugin.xcframework'
         cs.preserve_paths        = ['GoogleMapsPlugin.xcframework']
   end
