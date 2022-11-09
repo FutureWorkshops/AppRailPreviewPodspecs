@@ -15,5 +15,6 @@ Pod::Spec.new do |s|
     cs.dependency           'MobileWorkflow', '~> 2.1.6'
         cs.vendored_frameworks   = 'KingstonCouncilGeneralPlugin.xcframework'
         cs.preserve_paths        = ['KingstonCouncilGeneralPlugin.xcframework']
+
   end
 end
