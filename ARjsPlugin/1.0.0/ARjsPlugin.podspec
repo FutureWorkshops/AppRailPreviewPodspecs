@@ -15,5 +15,6 @@ Pod::Spec.new do |s|
     cs.dependency           'MobileWorkflow', '~> 2.1.3'
         cs.vendored_frameworks   = 'ARjsPlugin.xcframework'
         cs.preserve_paths        = ['ARjsPlugin.xcframework']
+
   end
 end
